@@ -1,0 +1,67 @@
+<!--
+@Author: Thibault Napoléon <Imothep>
+@Company: ISEN Yncréa Ouest
+@Email: thibault.napoleon@isen-ouest.yncrea.fr
+@Created Date: 23-Jan-2018 - 23:17:36
+@Last Modified: 05-Feb-2018 - 22:37:10
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Thibault Napoléon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Title -->
+    <title>TP n°3 - REST</title>
+
+    <!-- Css Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="page-header container">
+      <h1>TP n°3 <small>REST</small></h1>
+    </div>
+
+    <!-- Errors div -->
+    <div id="errors" class="container">
+    </div>
+    
+    <!-- Menu -->
+    <div class="container">
+      <div class="btn-group pull-right" role="group">
+        <button id="all-button" type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></button>
+        <button id="my-button" type="button" class="btn btn-default"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>
+      </div>
+    </div>
+    
+    <!-- Twitts div -->
+    <div id="twitts" class="container">
+      <h3>Liste des twitts</h3>
+    </div>
+
+    <!-- Add twitt div -->
+    <div id="twitt-add" class="container">
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon">Twitt ></span>
+          <input type="text" class="form-control" id="twitt" placeholder="Entrez votre twitt" autofocus>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-success pull-right" id="add-button">
+          <span class="glyphicon glyphicon-send"></span> Envoyer
+        </button>
+      </form>
+    </div>
+
+    <!-- Js Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/twitts.js"></script>
+  </body>
+</html>
